@@ -1,0 +1,1 @@
+# Link : https://www.codingninjas.com/studio/problems/sum-of-first-n-numbers_8876068?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&count=25&page=7&search=&sort_entity=order&sort_order=ASC&leftPanelTabValue=SUBMISSION
