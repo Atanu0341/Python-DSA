@@ -33,9 +33,9 @@ int main() {
     // // print(p);
     // update(*p);
 
-    int arr[5] = {1,2,3,4,5};
+    int arr[6] = {1,2,3,4,5,8};
 
-    cout<<getSum(arr,5)<<endl;
+    cout<<getSum(arr+3,5)<<endl;
 
     return 0;
 }
