@@ -9,7 +9,7 @@ def f(a, l, r):
     f(a, l+1, r-1)
 
 # Initialize the array
-arr = [1, 2, 3, 4, 5]
+arr = [1, 3, 2, 5, 4]
 n = len(arr)
 
 # Call the function to reverse the array
