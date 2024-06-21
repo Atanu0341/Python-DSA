@@ -14,7 +14,7 @@ def f(s,i):
 s = input("Enter a string :")
 n=len(s)
 
-print(f(s,0))
-
-
-
+if f(s,0) :
+    print("Palindrome")
+else:
+    print("Not Palindrome")
