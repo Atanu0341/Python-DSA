@@ -29,6 +29,15 @@ def print_linked_list(head):
         # Move to the next node in the linked list
         current = current.next
 
+def checkIfPresent(head, num):
+    current = head  # Start from the head of the linked list
+    
+    while current:
+        if current.data == num:
+            return 1  # Number found in the list
+        current = current.next  # Move to the next node
+    
+    return 0  # Number not found in the list
 
 arr = [2, 5, 8, 9]
 
@@ -37,3 +46,7 @@ linked_list_head = convertArrtoLL(arr)
 
 # Print the linked list
 print_linked_list(linked_list_head)
+
+# Check if the number 5 is present in the linked list
+result = checkIfPresent(linked_list_head, 5)
+print(result)  # Output: 1
