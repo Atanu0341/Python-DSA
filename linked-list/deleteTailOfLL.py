@@ -16,12 +16,16 @@ def convertArrToLL(arr):
 
     return head
 
-def deleteHead(head):
-    if head is None:
-        return None  # If the list is empty, return None
-    
-    head = head.next  # Move head to the next node, effectively deleting the current head
-    return head       # Return the new head of the list
+def deleteTail(head):
+    if head is None or head.next is None:
+        return None  # If the list is empty or has only one element, return None
+
+    current = head
+    while current.next.next is not None:  # Traverse to the second-to-last node
+        current = current.next
+
+    current.next = None  # Remove the last node
+    return head
 
 def printLL(head):
     current = head
@@ -36,7 +40,7 @@ linked_list = convertArrToLL(arr)
 print("Original linked list:")
 printLL(linked_list)
 
-# Delete the head of the linked list and print the updated list
-deleted_head = deleteHead(linked_list)
-print("Linked list after deleting the head:")
-printLL(deleted_head)
+# Delete the tail of the linked list and print the updated list
+deleted_tail = deleteTail(linked_list)
+print("Linked list after deleting the tail:")
+printLL(deleted_tail)
